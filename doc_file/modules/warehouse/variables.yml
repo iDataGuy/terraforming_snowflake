@@ -1,0 +1,31 @@
+environments: DEV
+warehouse:
+  - role:
+    - DEV_ROL_1_RW
+    - DEV_ROL_1_R
+    name: WH_1
+    size: x-small
+    comment : "Test WH 1"
+    max: 1
+    min: 1
+    multi: false
+#  - role:
+#    - SCD_2_RW
+#    - SCD_2_RO
+#    - SCD_2_FR
+#    name: LAV_TEST
+#    size: x-small
+#    comment : "Test WH"
+#    max: 1
+#    min: 1
+#    multi: false
+#  - role:
+#    - SCD_2_RW
+#    - SCD_2_RO
+#    - SCD_2_FR
+#    name: SCD_2
+#    size: x-small
+#    comment : "WH created by Lav"
+#    max: 1
+#    min: 1
+#    multi: false

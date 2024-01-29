@@ -1,0 +1,7 @@
+environments: SAMPLE_DEV
+database: DEV_1
+schema:
+  - name: SCD_1
+    comment: "This is schema 1"
+  - name: SCD_2
+    comment: "This is schema 2"
