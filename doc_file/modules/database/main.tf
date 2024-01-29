@@ -21,10 +21,10 @@ resource "snowflake_database" "db" {
 resource "snowflake_database_grant" "grant" {
   provider = snowflake.snow_db_admin
   for_each = {
-    for db, values in local.db_map : "${db}_${values.role[0]}" => {
+    for db, values in local.db_map : "${db}_${join("_", values.role)}" => {
       database_name      = values.name
       privilege          = "USAGE"
-      roles              = [values.role[0]]
+      roles              = values.role
       with_grant_option  = false
     }
   }
